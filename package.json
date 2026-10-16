@@ -1,0 +1,42 @@
+{
+  "name": "majestic-online-parser",
+  "version": "1.0.0",
+  "description": "A convenient singleton parser for online players in majestic projects",
+  "author": "Alond",
+  "contributors": [
+    "Matvey iamAlond"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "majestic",
+    "role-play",
+    "russia-online",
+    "majestic-roleplay",
+    "online"
+  ],
+  "type": "module",
+  "main": "dist/main.js",
+  "scripts": {
+    "start": "node .",
+    "dev": "tsx watch src/main.ts",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "axios": "^1.20.0",
+    "fastify": "^5.12.7",
+    "rxjs": "^7.8.2"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "pino-pretty": "^13.2.0",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  },
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "^11.1.2",
+      "onFail": "download"
+    }
+  }
+}
