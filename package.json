@@ -17,9 +17,24 @@
   "type": "module",
   "main": "dist/main.js",
   "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "prepare": "husky",
+    "release": "release-it",
+    "commit": "cz",
     "start": "node .",
     "dev": "tsx watch src/main.ts",
     "build": "tsc"
+  },
+  "lint-staged": {
+    "*.ts": [
+      "pnpm eslint --fix",
+      "prettier --write"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
   },
   "dependencies": {
     "axios": "^1.20.0",
@@ -27,8 +42,16 @@
     "rxjs": "^7.8.2"
   },
   "devDependencies": {
+    "@commitlint/cli": "^21.2.3",
+    "@commitlint/config-conventional": "^21.2.3",
+    "@release-it/conventional-changelog": "^12.0.2",
     "@types/node": "^26.6.5",
+    "commitizen": "^4.3.2",
+    "cz-conventional-changelog": "^3.3.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^17.6.0",
     "pino-pretty": "^13.2.0",
+    "release-it": "^21.1.1",
     "tsx": "^4.23.15",
     "typescript": "^7.0.2"
   },
