@@ -44,16 +44,22 @@
   "devDependencies": {
     "@commitlint/cli": "^21.2.3",
     "@commitlint/config-conventional": "^21.2.3",
+    "@eslint/js": "^10.0.1",
     "@release-it/conventional-changelog": "^12.0.2",
     "@types/node": "^26.6.5",
     "commitizen": "^4.3.2",
     "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^10.12.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.7",
+    "globals": "^17.13.0",
     "husky": "^9.1.7",
     "lint-staged": "^17.6.0",
     "pino-pretty": "^13.2.0",
     "release-it": "^21.1.1",
     "tsx": "^4.23.15",
-    "typescript": "^7.0.2"
+    "typescript": "^7.0.2",
+    "typescript-eslint": "^8.71.2"
   },
   "devEngines": {
     "packageManager": {
