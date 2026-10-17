@@ -1,18 +1,14 @@
 // @ts-check
-import eslint from "@eslint/js"
-import eslintConfigPrettier from "eslint-config-prettier"
-import eslintPluginPrettierRecommended from "eslint-plugin-prettier/recommended"
-import globals from "globals"
-import tseslint from "typescript-eslint"
+import eslint from "@eslint/js";
+import eslintConfigPrettier from "eslint-config-prettier";
+import eslintPluginPrettierRecommended from "eslint-plugin-prettier/recommended";
+import globals from "globals";
+import tseslint from "typescript-eslint";
 
 export default tseslint.config(
   {
     ignores: ["node_modules", "**/node_modules/**", "**/*.js", "**/*.d.ts"],
   },
-  eslint.configs.recommended,
-  ...tseslint.configs.recommendedTypeChecked,
-  eslintPluginPrettierRecommended,
-  eslintConfigPrettier,
   {
     languageOptions: {
       globals: {
@@ -22,13 +18,20 @@ export default tseslint.config(
       ecmaVersion: "latest",
       sourceType: "module",
       parserOptions: {
-        projectService: true,
+        projectService: {
+          allowDefaultProject: ["eslint.config.mjs"],
+        },
         tsconfigRootDir: import.meta.dirname,
       },
     },
   },
+  eslint.configs.recommended,
+  ...tseslint.configs.recommendedTypeChecked,
+  eslintPluginPrettierRecommended,
   {
     rules: {
+      "@typescript-eslint/restrict-template-expressions": "off",
+      "@typescript-eslint/no-redundant-type-constituents": "off",
       "@typescript-eslint/no-explicit-any": "off",
       "@typescript-eslint/no-unsafe-assignment": "off",
       "@typescript-eslint/no-unsafe-call": "off",
@@ -64,4 +67,5 @@ export default tseslint.config(
       "@typescript-eslint/only-throw-error": "off",
     },
   },
-)
+  eslintConfigPrettier,
+);
