@@ -1,5 +1,10 @@
 # Changelog
 
+## [1.0.2](https://github.com/iamAlond/majestic-online-parser/compare/1.0.1...1.0.2) (2026-10-19)
+
+* **docker:** add docker files to create build image ([15cf80f](https://github.com/iamAlond/majestic-online-parser/commit/15cf80fb4f8399599c6a12524acecb94e8fb4a47))
+* **prettier:** add prettier, fix eslint prettier rule ([5a6b8d2](https://github.com/iamAlond/majestic-online-parser/commit/5a6b8d2619ca488aacec252873c465ae5863fea6))
+
 ## 1.0.1 (2026-10-17)
 
 * **dev-deps:** add eslint ([ced7bf4](https://github.com/iamAlond/majestic-online-parser/commit/ced7bf4068e0781ce48abebc60110774d1ca746b))

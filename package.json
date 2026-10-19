@@ -1,6 +1,6 @@
 {
   "name": "majestic-online-parser",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A convenient singleton parser for online players in majestic projects",
   "author": "Alond",
   "contributors": [
