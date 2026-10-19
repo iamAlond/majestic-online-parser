@@ -1,0 +1,16 @@
+services:
+  majestic-online-parser:
+    container_name: majestic-online-parser
+    restart: unless-stopped
+    env_file:
+      - .env
+    networks:
+      - majestic-online-parser-network
+    build:
+      context: ./
+      dockerfile: Dockerfile
+      target: production
+
+networks:
+  majestic-online-parser-network:
+    driver: bridge
