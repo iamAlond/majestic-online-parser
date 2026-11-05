@@ -121,7 +121,7 @@ export class DecodeService {
 		const forBeginnersLauncher = !!wire.forBeginnersLauncher
 		const forBeginnersSite = !!(wire.forBeginnersSite ?? false)
 
-		const player = Number(wire.players ?? 0)
+		const player = statusText === 'offline' ? 0 : Number(wire.players ?? 0)
 		const queuedPlayers = Number(wire.queuedPlayers ?? 0)
 		const activePlayers = player + queuedPlayers
 		const peakAllTime = Number(wire.peakAllTime ?? 0)
