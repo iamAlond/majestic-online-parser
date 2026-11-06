@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.0.3](https://github.com/iamAlond/majestic-online-parser/compare/1.0.2...1.0.3) (2026-11-06)
+
+### Bug Fixes
+
+* **server-players:** fix offline server players value ([23a00ce](https://github.com/iamAlond/majestic-online-parser/commit/23a00ceda5b12237a5b6ae8d8012e9cca9ca1998))
+
 ## [1.0.2](https://github.com/iamAlond/majestic-online-parser/compare/1.0.1...1.0.2) (2026-10-19)
 
 * **docker:** add docker files to create build image ([15cf80f](https://github.com/iamAlond/majestic-online-parser/commit/15cf80fb4f8399599c6a12524acecb94e8fb4a47))
