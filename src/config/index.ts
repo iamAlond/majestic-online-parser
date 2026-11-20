@@ -1,7 +1,7 @@
 export const config = {
 	isProduction: process.env['NODE_ENV'] === 'production',
 	server: {
-		port: 4444,
+		port: Number(process.env['PORT'] ?? 4444),
 		host: '0.0.0.0'
 	},
 	refreshInterval: 15 * 1000,

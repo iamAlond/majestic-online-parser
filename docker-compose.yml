@@ -4,6 +4,10 @@ services:
     restart: unless-stopped
     env_file:
       - .env
+    environment:
+      - PORT=80
+    sysctls:
+      - net.ipv4.ip_unprivileged_port_start=0
     networks:
       - majestic-online-parser-network
     build:

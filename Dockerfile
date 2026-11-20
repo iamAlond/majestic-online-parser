@@ -15,6 +15,8 @@ ENV NODE_ENV=production
 COPY --from=build /app/node_modules ./node_modules
 COPY src/ ./src/
 
-EXPOSE 4444
+USER bun
+
+EXPOSE 80
 
 CMD ["bun", "run", "src/main.ts"]
