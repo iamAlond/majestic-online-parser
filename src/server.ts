@@ -12,7 +12,8 @@ export async function createServer() {
 		logger: {
 			level: config.logger.level,
 			transport: !config.isProduction ? { target: 'pino-pretty', options: { colorize: true } } : undefined
-		}
+		},
+		disableRequestLogging: config.isProduction
 	})
 
 	const fetchService = new FetchService(app.log)
