@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.1.0](https://github.com/iamAlond/majestic-online-parser/compare/1.0.3...1.1.0) (2026-11-21)
+
+* bump node to bun ([d3c6064](https://github.com/iamAlond/majestic-online-parser/commit/d3c6064ec632a4e90fc32aa8bd1eaaa2ea1e3e45))
+* **docker:** production build now work in 80 port (default) ([03de1b0](https://github.com/iamAlond/majestic-online-parser/commit/03de1b019235d3b68a501cf6b36af0dbd7f770e3))
+
+### Features
+
+* **logging:** disable request logging in production build ([932ca38](https://github.com/iamAlond/majestic-online-parser/commit/932ca38343275400289b443457334ac4983fd63c))
+
 ## [1.0.3](https://github.com/iamAlond/majestic-online-parser/compare/1.0.2...1.0.3) (2026-11-06)
 
 ### Bug Fixes
