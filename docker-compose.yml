@@ -9,13 +9,13 @@ services:
     sysctls:
       - net.ipv4.ip_unprivileged_port_start=0
     networks:
-      - majestic-online-parser-network
+      - majestic-online-network
     build:
       context: ./
       dockerfile: Dockerfile
       target: production
 
 networks:
-  majestic-online-parser-network:
-    name: majestic-parser-net
+  majestic-online-network:
+    name: majestic-online-network
     driver: bridge
