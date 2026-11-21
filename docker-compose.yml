@@ -17,4 +17,5 @@ services:
 
 networks:
   majestic-online-parser-network:
+    name: majestic-parser-net
     driver: bridge
